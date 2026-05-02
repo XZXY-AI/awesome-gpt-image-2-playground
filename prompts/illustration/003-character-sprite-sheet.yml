@@ -1,0 +1,35 @@
+id: il-003
+title: "Game character sprite sheet — 8 poses, single character"
+title_i18n:
+  zh-CN: "游戏角色 sprite sheet(8 个动作姿态)"
+category: illustration
+tags: [illustration, game, character, sprite-sheet, design]
+intent: "游戏角色设计文档 / 同人创作参考 / 角色一致性测试"
+prompt: |
+  A character design sprite sheet on a clean off-white #F4ECE0 background, presenting
+  the same character "[CHARACTER_NAME]" in 8 different poses arranged in a 4×2 grid.
+  Each cell is roughly 256×256, with a thin gray separator between cells.
+  Character description: [CHARACTER_DESCRIPTION].
+  The 8 poses, left-to-right, top-to-bottom:
+  1. Front-facing neutral standing pose, arms relaxed at sides
+  2. 3/4 angle walking forward, mid-stride
+  3. Back view standing, looking over shoulder
+  4. Side profile running, full sprint
+  5. Crouching / inspecting something on the ground
+  6. Mid-air jumping pose, arms raised
+  7. Sitting cross-legged, holding [SIGNATURE_PROP]
+  8. Victory / cheering pose, fist raised
+  Style: clean digital illustration with crisp linework, flat colors with one shading
+  layer for depth, no gradients. Color palette is consistent across all 8 poses.
+  Each cell has a tiny pose label below in 12pt monospace font ("idle", "walk", "back",
+  "run", "crouch", "jump", "sit", "win"). Aspect ratio 16:9.
+variables:
+  CHARACTER_NAME: "Mira"
+  CHARACTER_DESCRIPTION: "a young adventurer girl, age ~14, with bright teal hair tied in a high ponytail, freckles, wearing a forest-green cropped tunic over leather leggings, with a tan satchel slung across her chest and tall lace-up boots"
+  SIGNATURE_PROP: "an old worn-leather journal"
+preview: previews/il-003.webp
+size: 1536x1024
+source: ""
+license: CC-BY-4.0
+created: 2026-05-05
+hot_score: 0

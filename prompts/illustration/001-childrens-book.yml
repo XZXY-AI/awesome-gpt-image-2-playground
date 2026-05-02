@@ -1,0 +1,33 @@
+id: il-001
+title: "Children's book illustration — whimsical bedroom scene"
+title_i18n:
+  zh-CN: "儿童绘本插画(童趣卧室场景)"
+category: illustration
+tags: [illustration, childrens-book, whimsical, watercolor, narrative]
+intent: "童书插画 / 教育产品配图 / 儿童 App 启动图"
+prompt: |
+  A warm whimsical children's book illustration in soft watercolor style. Scene:
+  [SCENE_DESCRIPTION]. The protagonist is [CHARACTER_DESCRIPTION], shown
+  [CHARACTER_ACTION].
+  Style references: Beatrix Potter, Quentin Blake, Oliver Jeffers — gentle line work
+  with subtle ink linework, watercolor washes that bleed slightly outside the lines for
+  organic feel, cross-hatching for shadow texture.
+  Color palette: warm off-whites, dusty rose, sage green, soft cobalt, terracotta,
+  honey yellow — never neon, always muted earth tones.
+  The composition is balanced but informal: small details reward second look (a [DETAIL_1],
+  a [DETAIL_2], a [DETAIL_3]). Slight paper texture overlay throughout.
+  Aspect ratio 4:3 (landscape book spread). Suitable for ages 3-8. Soft, magical,
+  inviting bedtime-story atmosphere. No text within the image.
+variables:
+  SCENE_DESCRIPTION: "a cozy children's bedroom at bedtime, with a tiny rocket-ship-shaped bed, fairy lights strung across the ceiling, and a window showing a moonlit garden outside"
+  CHARACTER_DESCRIPTION: "a small girl in striped yellow pajamas with messy brown pigtails"
+  CHARACTER_ACTION: "kneeling at the window, hands on the glass, watching a friendly cloud-shaped creature peek in from outside"
+  DETAIL_1: "stuffed rabbit toy fallen halfway off the bed"
+  DETAIL_2: "open picture book on the floor with a paper airplane bookmark"
+  DETAIL_3: "tiny mouse peeking out from behind the dresser holding a piece of cheese"
+preview: previews/il-001.webp
+size: 1536x1024
+source: ""
+license: CC-BY-4.0
+created: 2026-05-05
+hot_score: 0

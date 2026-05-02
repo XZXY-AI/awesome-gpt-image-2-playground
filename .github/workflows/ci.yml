@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate prompts & schema
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'pnpm'
+
+      - run: pnpm install --frozen-lockfile=false
+
+      - name: Validate all prompt YAMLs
+        run: pnpm validate
+
+      - name: Build index
+        run: pnpm build:index
+
+      - name: Verify README is up to date
+        if: github.event_name == 'pull_request'
+        run: |
+          pnpm build:readme
+          if ! git diff --exit-code README.md; then
+            echo "::error::README.md is out of date. Run 'pnpm build:readme' and commit."
+            exit 1
+          fi

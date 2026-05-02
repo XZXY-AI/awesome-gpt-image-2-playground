@@ -1,0 +1,27 @@
+id: po-002
+title: "Typography-only quote poster, gallery print quality"
+title_i18n:
+  zh-CN: "纯字体海报(画廊级金句)"
+category: poster
+tags: [typography, poster, quote, minimalist, print]
+intent: "金句海报 / 装饰画 / 办公室墙画 / Etsy 印刷品"
+prompt: |
+  A minimalist gallery-quality typography poster, vertical 2:3 aspect ratio.
+  Pure [BG_COLOR] background with subtle paper-texture grain. Centered, a powerful
+  quote that reads exactly: "[QUOTE]". The quote is typeset in elegant serif
+  (similar to Caslon or Garamond), with deliberate hierarchy: the most impactful word
+  "[EMPHASIS_WORD]" is dramatically larger and shifted to break the visual rhythm.
+  Three lines maximum. Tracking is slightly open (50/1000). Below the quote, a thin
+  hairline rule and tiny attribution "[ATTRIBUTION]" in small caps. No imagery,
+  no decoration. Print-ready, museum-quality. 18×24 inch print proportions.
+variables:
+  BG_COLOR: "deep ink black #0F0F0F with the type in warm off-white #F0EBE2"
+  QUOTE: "We are what we repeatedly do. Excellence, then, is not an act, but a habit."
+  EMPHASIS_WORD: "Excellence"
+  ATTRIBUTION: "— ARISTOTLE"
+preview: previews/po-002.webp
+size: 1024x1536
+source: ""
+license: CC-BY-4.0
+created: 2026-05-05
+hot_score: 0

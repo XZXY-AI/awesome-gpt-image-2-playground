@@ -1,0 +1,34 @@
+id: ph-004
+title: "Wide-angle landscape — dramatic Iceland glacier scene"
+title_i18n:
+  zh-CN: "大场景风光(冰岛冰川戏剧光影)"
+category: photography
+tags: [photography, landscape, wide-angle, dramatic, travel, nature]
+intent: "旅游 / 风光摄影 / 桌面壁纸 / 公众号长图配图"
+prompt: |
+  A breathtaking wide-angle landscape photograph of [SCENE]. The composition uses a
+  strong leading line: [LEADING_LINE] draws the eye from the lower-left foreground deep
+  into the middle distance. A single small human figure (silhouette in [FIGURE_COLOR],
+  occupying < 5% of frame) stands on [FIGURE_POSITION], providing scale.
+  Sky: [SKY_DESCRIPTION] — dramatic but not over-the-top. The atmospheric perspective
+  creates depth, with foreground details razor-sharp and distant peaks softening into
+  a slight haze. Light is the protagonist: [LIGHT_QUALITY].
+  Color grading: cool blues and steel grays in the shadows, warm golden tones in the
+  highlights — classic landscape photography contrast. Slight S-curve, deep blacks
+  preserved, highlights protected.
+  Shot on Sony A7R V, 16-35mm at 16mm, f/11, ISO 100, 1/125s, polarizer filter, tripod
+  stabilized. Aspect ratio 21:9 panoramic.
+  Style: Sebastiao Salgado meets Alex Strohl, National Geographic finalist quality.
+variables:
+  SCENE: "a glacier-fed lake at sunrise in southern Iceland, with a massive blue-white glacier flowing into the water on the right and jagged volcanic peaks rising on the left"
+  LEADING_LINE: "an icy stream curving through black volcanic sand"
+  FIGURE_COLOR: "deep red puffy jacket"
+  FIGURE_POSITION: "a small rocky outcrop in the middle distance"
+  SKY_DESCRIPTION: "wisps of cirrus clouds catching first light, dawn pink fading into pale blue at zenith"
+  LIGHT_QUALITY: "low golden-hour rays raking across the glacier face, creating long blue shadows in the crevasses"
+preview: previews/ph-004.webp
+size: 1536x1024
+source: ""
+license: CC-BY-4.0
+created: 2026-05-05
+hot_score: 0

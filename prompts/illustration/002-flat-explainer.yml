@@ -1,0 +1,33 @@
+id: il-002
+title: "Flat-style explainer illustration — abstract people working"
+title_i18n:
+  zh-CN: "扁平风格解说插画(团队协作场景)"
+category: illustration
+tags: [illustration, flat, vector, business, abstract, team]
+intent: "SaaS 落地页 / 博客头图 / 公众号配图 / Notion 模板"
+prompt: |
+  A modern flat-style vector illustration depicting [SCENE_CONCEPT]. Multiple stylized
+  human figures (3-4 people) in geometric, abstract proportions — heads slightly oversized,
+  simplified bodies, no detailed faces (just tiny eye dots, no mouths). They are
+  [ACTIVITIES].
+  Style references: Stripe illustrations, Slack marketing, Notion blog graphics, the
+  current Webflow visual language.
+  Color palette: muted modern earth tones — terracotta, sage, sand, soft indigo, dusty
+  rose. No pure white, no pure black; everything has a slight warmth.
+  Compositional elements: floating geometric shapes (circles, soft-edge squares,
+  triangles) suggesting tools, ideas, or data. A single thin curving line connects
+  characters or shapes, suggesting flow.
+  Background: solid [BG_COLOR] with subtle texture, rounded corners on all primary shapes
+  (8-12px radius). Drop shadows are flat and offset (no soft gradients), in a slightly
+  darker shade of the base color.
+  Aspect ratio 16:9. No text within the image. Crisp vector clarity, infinitely scalable.
+variables:
+  SCENE_CONCEPT: "a small remote team collaborating across timezones on a creative project"
+  ACTIVITIES: "one drawing on a laptop, one holding a giant pencil pointing at a floating sticky-note board, one juggling colored shapes representing ideas, one peeking from a video-call window"
+  BG_COLOR: "warm cream #F4ECE0"
+preview: previews/il-002.webp
+size: 1536x1024
+source: ""
+license: CC-BY-4.0
+created: 2026-05-05
+hot_score: 0

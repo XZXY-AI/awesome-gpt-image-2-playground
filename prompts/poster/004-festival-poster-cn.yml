@@ -1,0 +1,32 @@
+id: po-004
+title: "Chinese festival poster — Mid-Autumn / Spring Festival aesthetic"
+title_i18n:
+  zh-CN: "中国节日海报(中秋 / 春节风)"
+category: poster
+tags: [festival, chinese, traditional, vertical, marketing]
+intent: "节日营销海报 / 公众号头图 / 商场印刷品"
+prompt: |
+  A vertical 2:3 Chinese festival marketing poster for "[FESTIVAL_NAME]".
+  Top 65%: a hand-painted ink-wash style illustration of [SCENE_DESCRIPTION], rendered
+  in traditional Chinese painting technique with controlled brush strokes, on a textured
+  rice-paper background. Limited palette: deep indigo, warm gold, burnt sienna, with
+  pure white negative space. A single subtle moon or lantern as focal point.
+  Bottom 35%: solid warm cream surface with crisp typography:
+  Large vertical title "[CN_TITLE]" in 思源宋体 Heavy (or similar Chinese serif),
+  positioned right-aligned reading top-to-bottom in traditional style, with a small red
+  square seal stamp (像印章) below. Beneath: subtitle "[CN_SUBTITLE]" in horizontal
+  smaller weight. Bottom corner: brand "[BRAND]" + date "[DATE]" in modern sans.
+  Print quality, museum-grade composition.
+variables:
+  FESTIVAL_NAME: "中秋"
+  SCENE_DESCRIPTION: "a small wooden boat drifting on still water under a full moon, with a single lotus floating beside it"
+  CN_TITLE: "月满中秋 · 思与归"
+  CN_SUBTITLE: "千里婵娟,共此时光"
+  BRAND: "茶山堂  ·  TEASHAN"
+  DATE: "2026.09.17"
+preview: previews/po-004.webp
+size: 1024x1536
+source: ""
+license: CC-BY-4.0
+created: 2026-05-05
+hot_score: 0

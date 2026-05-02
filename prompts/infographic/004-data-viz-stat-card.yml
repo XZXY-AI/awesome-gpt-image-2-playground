@@ -1,0 +1,32 @@
+id: ig-004
+title: "Single-stat data visualization card — viral hook"
+title_i18n:
+  zh-CN: "单数据卡片(viral 钩子)"
+category: infographic
+tags: [infographic, stat, single-number, viral, social]
+intent: "X / 推特 viral 数据图 / LinkedIn 卡片 / 公众号配图"
+prompt: |
+  A square 1:1 social-media-ready data visualization card. Composition:
+  Top 20%: small label "[CONTEXT_LABEL]" in 18pt uppercase tracked-out sans.
+  Center 60%: a single enormous number "[BIG_NUMBER]" in 240pt extrabold display
+  typeface (similar to Druk or Geist Display Black), in [BIG_NUMBER_COLOR]. The number
+  has 2-3 significant digits, no decimals, optional suffix "%" or "x" in slightly
+  smaller weight.
+  Below the number: a 24pt subtitle "[DESCRIPTION]" in clean sans, balanced ragged-right.
+  Bottom 20%: a small horizontal bar chart or sparkline showing the trend, with a
+  single data label callout. Far bottom: tiny "[SOURCE_ATTRIBUTION]" in 10pt muted gray.
+  Background: solid [BG_COLOR] with subtle paper-texture grain. No clutter.
+  Style: New York Times / FT / Stripe quarterly report aesthetic. 1080×1080 native.
+variables:
+  CONTEXT_LABEL: "AI ADOPTION  ·  2026 Q1"
+  BIG_NUMBER: "73%"
+  BIG_NUMBER_COLOR: "deep indigo #4F46E5"
+  DESCRIPTION: "of knowledge workers now use generative AI at least weekly — up from 19% just two years ago."
+  SOURCE_ATTRIBUTION: "Source: Gallup / Workforce Survey, n=8,400"
+  BG_COLOR: "off-white #FAFAFA"
+preview: previews/ig-004.webp
+size: 1024x1024
+source: ""
+license: CC-BY-4.0
+created: 2026-05-05
+hot_score: 0

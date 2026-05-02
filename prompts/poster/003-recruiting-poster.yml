@@ -1,0 +1,36 @@
+id: po-003
+title: "Modern recruiting / hiring poster, startup style"
+title_i18n:
+  zh-CN: "招聘海报(科技公司风格)"
+category: poster
+tags: [recruiting, hiring, startup, modern, business]
+intent: "招聘海报 / 内推海报 / LinkedIn 招聘图 / 公众号配图"
+prompt: |
+  A modern recruiting poster for a startup, vertical 2:3 aspect ratio. Top 60%:
+  a confident, abstract gradient mesh in [GRADIENT_COLORS], with three floating
+  geometric shapes (circle, triangle, soft-edge square) suggesting team / momentum.
+  Bottom 40%: solid [BG_COLOR] with crisp typography:
+  Large headline "We're hiring." in 72pt clean sans-serif (similar to Inter Bold).
+  Subhead "[ROLE]" in 48pt medium weight. Below: 3 bullet points in 24pt regular,
+  each starting with a small circle bullet:
+  • [BENEFIT_1]
+  • [BENEFIT_2]
+  • [BENEFIT_3]
+  Bottom: company name "[COMPANY]" in tracked-out small caps + a CTA "[CTA_TEXT] →"
+  in [ACCENT_COLOR]. Style: Linear / Vercel / Notion startup aesthetic. Print-ready.
+variables:
+  GRADIENT_COLORS: "indigo to coral to soft mint"
+  BG_COLOR: "off-white #FAFAFA"
+  ROLE: "Senior Full-Stack Engineer (TypeScript / React)"
+  BENEFIT_1: "Fully remote, async-first culture"
+  BENEFIT_2: "Equity + competitive base + learning stipend"
+  BENEFIT_3: "Ship to 50K+ users in your first month"
+  COMPANY: "LUMEN  ·  YC W26"
+  CTA_TEXT: "Apply at lumen.work/careers"
+  ACCENT_COLOR: "indigo #4F46E5"
+preview: previews/po-003.webp
+size: 1024x1536
+source: ""
+license: CC-BY-4.0
+created: 2026-05-05
+hot_score: 0

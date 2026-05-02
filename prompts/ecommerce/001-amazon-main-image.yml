@@ -1,0 +1,29 @@
+id: ec-001
+title: "Amazon-style product main image with floating ingredients"
+title_i18n:
+  zh-CN: "亚马逊风格产品主图(配料悬浮)"
+  ja: "アマゾンスタイル商品メイン画像(原料浮遊)"
+  ko: "아마존 스타일 제품 메인 이미지(재료 부유)"
+category: ecommerce
+tags: [product, packshot, white-bg, floating, motion-blur, commercial]
+intent: "电商主图 / Amazon listing / Shopify product hero"
+prompt: |
+  A professional product photograph of [PRODUCT] centered on pure white seamless background.
+  Key ingredients and components float dynamically around the product with subtle motion blur,
+  arranged in a balanced asymmetric composition. Soft studio lighting from upper left,
+  ultra-sharp focus on the product label, shallow depth of field on floating elements.
+  Hyper-realistic, commercial-grade product photography, 1:1 aspect ratio, 8K detail,
+  no text overlays, no people, no shadows on the white surface.
+variables:
+  PRODUCT: "Premium 70% dark chocolate bar with cacao beans and almonds"
+preview: previews/ec-001.webp
+preview_variants:
+  - previews/ec-001-a.webp
+  - previews/ec-001-b.webp
+  - previews/ec-001-c.webp
+  - previews/ec-001-d.webp
+size: 1024x1024
+source: "https://x.com/example/status/example"
+license: CC-BY-4.0
+created: 2026-05-05
+hot_score: 0

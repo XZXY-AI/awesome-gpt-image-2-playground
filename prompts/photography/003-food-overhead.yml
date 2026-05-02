@@ -1,0 +1,36 @@
+id: ph-003
+title: "Food photography — overhead flat-lay, magazine quality"
+title_i18n:
+  zh-CN: "美食摄影(俯拍平铺,杂志级)"
+category: photography
+tags: [photography, food, flat-lay, overhead, editorial]
+intent: "餐饮品牌官网 / 食谱博客 / Bon Appetit 风格 / 公众号头图"
+prompt: |
+  An overhead flat-lay food photograph of [DISH_NAME], styled like a Bon Appetit cover
+  feature. The hero plate is centered slightly off-center to the right (rule of thirds),
+  surrounded by:
+  - Raw ingredients suggesting the dish's making: [INGREDIENTS_1], [INGREDIENTS_2]
+  - A small bowl of [SIDE_ELEMENT]
+  - A linen napkin in [LINEN_COLOR] crumpled artistically lower-left
+  - A vintage fork resting at a 30° angle on the napkin
+  - One or two scattered [GARNISH] for organic asymmetry
+  Surface: [SURFACE]. Lighting: bright soft daylight from upper-left (window-style),
+  no harsh shadows but enough to define textures. Color palette is warm and natural —
+  not over-saturated. Steam rises faintly from the hot dish (subtle, not cartoon).
+  Shot on Canon R5, 50mm prime, f/4.5, ISO 200. Aspect ratio 4:5.
+  Editorial styling: every element placed with intent, but feels effortless. No props
+  that don't relate to the dish.
+variables:
+  DISH_NAME: "a creamy mushroom risotto with shaved truffle"
+  INGREDIENTS_1: "three whole shiitake mushrooms"
+  INGREDIENTS_2: "a head of garlic with one clove peeled"
+  SIDE_ELEMENT: "freshly grated parmesan"
+  LINEN_COLOR: "muted sage green"
+  GARNISH: "fresh thyme sprigs"
+  SURFACE: "weathered dark walnut wood plank"
+preview: previews/ph-003.webp
+size: 1024x1536
+source: ""
+license: CC-BY-4.0
+created: 2026-05-05
+hot_score: 0

@@ -1,0 +1,35 @@
+id: ui-002
+title: "SaaS dashboard mockup — analytics overview"
+title_i18n:
+  zh-CN: "SaaS 仪表盘 Mockup(数据概览)"
+category: ui-mockup
+tags: [dashboard, saas, analytics, web, light-mode, charts]
+intent: "SaaS 落地页配图 / 产品 demo 截图 / 投资人 deck 配图"
+prompt: |
+  A pixel-perfect web app dashboard screenshot for "[APP_NAME]", taken in light mode.
+  Layout: left sidebar (220px wide) with logo at top and 5-7 navigation items with
+  small icons; main content area on the right.
+  Top of main area: page title "[PAGE_TITLE]" with a subtitle, plus a date-range picker
+  on the right. Below: a row of 4 KPI metric cards each showing:
+  - large number "[METRIC_VALUE]"
+  - label "[METRIC_LABEL]"
+  - small green/red trend arrow with "[TREND_PERCENT]"
+  Below the cards: a large area chart spanning full width showing growth over 30 days,
+  with a single colored line in [ACCENT_COLOR] and subtle grid. Right side: a smaller
+  bar chart titled "[BAR_CHART_TITLE]" with 7 bars.
+  Style: Linear / Vercel / Stripe Dashboard aesthetic. Crisp Inter font. White background
+  with cards on subtle off-white. 16px gutters. 1440×900 viewport screenshot.
+variables:
+  APP_NAME: "Lumen Analytics"
+  PAGE_TITLE: "Overview"
+  METRIC_VALUE: "$48,329"
+  METRIC_LABEL: "Revenue this month"
+  TREND_PERCENT: "+12.4%"
+  ACCENT_COLOR: "indigo #4F46E5"
+  BAR_CHART_TITLE: "Top channels"
+preview: previews/ui-002.webp
+size: 1536x1024
+source: ""
+license: CC-BY-4.0
+created: 2026-05-05
+hot_score: 0

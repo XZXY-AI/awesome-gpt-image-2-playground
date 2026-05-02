@@ -1,0 +1,38 @@
+id: ui-004
+title: "SaaS landing page hero section mockup"
+title_i18n:
+  zh-CN: "SaaS 落地页 Hero 区 Mockup"
+category: ui-mockup
+tags: [landing, hero, web, saas, marketing, light-mode]
+intent: "SaaS 官网 hero / 投资人 pitch 配图 / 产品发布配图"
+prompt: |
+  A pixel-perfect screenshot of a SaaS landing page hero section in a desktop browser.
+  Top: a thin transparent navigation bar with the logo "[BRAND]" on the left, 4 nav links
+  in the center ([NAV_1] / [NAV_2] / [NAV_3] / [NAV_4]), and two buttons on the right
+  ("Sign in" outline + "Get started" filled in [ACCENT_COLOR]).
+  Center: an enormous h1 headline reading "[HEADLINE]" — 96pt clean sans (similar to
+  Inter or Geist), three-line max with deliberate line breaks, the most important
+  word/phrase "[EMPHASIS]" in [ACCENT_COLOR].
+  Below h1: a 22pt subhead "[SUBHEAD]" in muted gray, single line.
+  Below subhead: two CTAs — primary "Start free trial →" filled button + secondary
+  "View pricing" outline. Below the CTAs: a row of 4 small social-proof logos in mono
+  gray with the label "Trusted by 5,000+ teams".
+  Background: subtle radial gradient mesh in [BG_GRADIENT], extremely subtle.
+  16:9 aspect ratio, 1920×1080. Style: Vercel / Linear / Notion modern marketing.
+variables:
+  BRAND: "Lumen"
+  NAV_1: "Product"
+  NAV_2: "Customers"
+  NAV_3: "Pricing"
+  NAV_4: "Docs"
+  HEADLINE: "Ship features faster, without sacrificing quality."
+  EMPHASIS: "without sacrificing quality"
+  SUBHEAD: "The all-in-one platform for product teams who care about both speed and craft."
+  ACCENT_COLOR: "indigo #4F46E5"
+  BG_GRADIENT: "soft indigo to white"
+preview: previews/ui-004.webp
+size: 1536x1024
+source: ""
+license: CC-BY-4.0
+created: 2026-05-05
+hot_score: 0

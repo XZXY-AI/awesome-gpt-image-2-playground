@@ -1,0 +1,31 @@
+id: po-001
+title: "Bilingual event poster with cinematic key visual"
+title_i18n:
+  zh-CN: "双语活动海报(电影感主视觉)"
+category: poster
+tags: [poster, event, bilingual, typography, cinematic, vertical]
+intent: "活动海报 / event poster / bilingual marketing"
+prompt: |
+  A cinematic event poster, vertical 2:3 aspect ratio.
+  Top 70% of the canvas is a moody atmospheric photograph of [SCENE_DESCRIPTION],
+  with soft volumetric light, film grain, slight teal-and-orange color grading.
+  Bottom 30% is solid deep navy color blocking with crisp typography:
+  Large English title "[EN_TITLE]" in elegant serif font (similar to Playfair Display),
+  beneath it Chinese title "[CN_TITLE]" in modern sans-serif (similar to 思源宋体).
+  Date "[DATE]" in small uppercase tracking letters, location "[LOCATION]" below.
+  Small geometric line accents. Two thin gold horizontal rules separating sections.
+  Composition: rule-of-thirds, generous whitespace, magazine-quality print finish.
+variables:
+  SCENE_DESCRIPTION: "an empty grand concert hall with dramatic stage lighting and rows of red velvet seats"
+  EN_TITLE: "An Evening of Strings"
+  CN_TITLE: "弦音之夜"
+  DATE: "JUNE 15  •  2026  •  19:30"
+  LOCATION: "Shanghai Symphony Hall"
+preview: previews/po-001.webp
+preview_variants:
+  - previews/po-001-a.webp
+size: 1024x1536
+source: ""
+license: CC-BY-4.0
+created: 2026-05-05
+hot_score: 0

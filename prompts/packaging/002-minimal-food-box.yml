@@ -1,0 +1,32 @@
+id: pk-002
+title: "Minimalist food packaging — front-facing carton on color block"
+title_i18n:
+  zh-CN: "极简食品包装(纸盒正面 + 撞色背景)"
+category: packaging
+tags: [packaging, food, minimalist, cereal, modern]
+intent: "食品品牌主图 / 落地页 hero / 详情页"
+prompt: |
+  A clean minimalist packaging design photograph: a front-facing rectangular cardboard
+  carton of "[PRODUCT_NAME]" centered on a [BG_COLOR] background. The carton features:
+  - Top half: large bold sans-serif logo "[BRAND]" in [LOGO_COLOR]
+  - Center: an illustrated pictogram of [INGREDIENT_ICON] in flat 2-color style
+  - Below pictogram: product variety name "[VARIETY]" in 36pt regular sans
+  - Bottom: small certifications icon row (organic / non-GMO / vegan)
+  - Bottom edge: net weight "[WEIGHT]" in tracked-out small caps
+  Carton has a slight 3D rotation (5° toward viewer) showing a hint of the side panel.
+  Soft directional lighting from upper-left at 45°, subtle but realistic shadow on the
+  background. Style: Method / Magic Spoon / Olipop modern CPG aesthetic. 1:1 aspect ratio.
+variables:
+  PRODUCT_NAME: "Morning Crunch Granola"
+  BRAND: "OAT&"
+  BG_COLOR: "warm sage green #BFD1B5"
+  LOGO_COLOR: "deep forest #1F3324"
+  INGREDIENT_ICON: "an oat sprig with three berries"
+  VARIETY: "Maple · Pecan · Cranberry"
+  WEIGHT: "NET WT  340g  ·  12oz"
+preview: previews/pk-002.webp
+size: 1024x1024
+source: ""
+license: CC-BY-4.0
+created: 2026-05-05
+hot_score: 0

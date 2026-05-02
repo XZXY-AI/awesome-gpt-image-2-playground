@@ -1,0 +1,54 @@
+name: Daily rebuild (public)
+
+# Re-validates, rebuilds index/README/translations/stats from the current
+# prompts/ directory. Idempotent: commits only if files actually changed.
+#
+# Content sourcing (the "ingest" job that scrapes X) lives in the PRIVATE
+# `gptimage2-ops` repo and runs 1h earlier. Drafts there are reviewed manually
+# and committed to this repo as regular PRs.
+
+on:
+  schedule:
+    - cron: '0 9 * * *' # 09:00 UTC = 17:00 Beijing = 02:00 PT
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'pnpm'
+
+      - run: pnpm install --frozen-lockfile=false
+
+      - name: Build pipeline
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          SITE_URL: https://gptimage2.veilo.dev
+        run: |
+          pnpm validate
+          pnpm build:index
+          pnpm build:readme
+          pnpm translate
+          pnpm stats
+
+      - name: Commit changes
+        run: |
+          git config user.name "gpt-image2-bot"
+          git config user.email "bot@gptimage2.veilo.dev"
+          git add prompts/_index.yml docs/stats.json README*.md
+          git diff --staged --quiet || git commit -m "chore: daily rebuild ($(date -u +%Y-%m-%d))"
+          git push

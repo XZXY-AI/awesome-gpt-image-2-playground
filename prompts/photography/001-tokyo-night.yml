@@ -1,0 +1,27 @@
+id: ph-001
+title: "Cinematic Tokyo night street — neon-soaked rainy alley"
+title_i18n:
+  zh-CN: "电影感东京夜景(雨后霓虹小巷)"
+category: photography
+tags: [photography, cinematic, night, neon, urban, rain, atmospheric]
+intent: "城市摄影 / 电影预告片配图 / 公众号封面 / 短视频背景"
+prompt: |
+  A hyper-cinematic street photograph of a narrow Tokyo alleyway at night, immediately
+  after rain. Wet pavement reflects neon signage from both sides — Japanese kanji and
+  hiragana characters in [NEON_COLORS] glow and bleed onto the wet asphalt. A solitary
+  figure in a [FIGURE_DESC] walks away from camera in mid-frame, slightly out-of-focus.
+  Steam rises from a vendor's stall on the right. Above: a tangle of power lines crosses
+  a sliver of indigo night sky, framing a distant glowing red lantern. Ground-level
+  puddles catch the pink and cyan reflections.
+  Style: Wong Kar-wai meets Blade Runner 2049, anamorphic lens flare, ARRI Alexa color
+  science with deep teals and soft magentas, slight film grain, high dynamic range.
+  Aspect ratio 21:9 cinematic. Shot at 35mm, f/1.8, 1/60s, ISO 1600.
+variables:
+  NEON_COLORS: "magenta-pink, cyan, electric yellow"
+  FIGURE_DESC: "long black trench coat carrying a transparent umbrella"
+preview: previews/ph-001.webp
+size: 1536x1024
+source: ""
+license: CC-BY-4.0
+created: 2026-05-05
+hot_score: 0

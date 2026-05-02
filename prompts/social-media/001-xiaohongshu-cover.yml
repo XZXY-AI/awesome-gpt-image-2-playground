@@ -1,0 +1,29 @@
+id: sm-001
+title: "Xiaohongshu (Little Red Book) cover with bold Chinese typography"
+title_i18n:
+  zh-CN: "小红书爆款封面(中文大字标题)"
+  en: "Xiaohongshu cover with bold Chinese typography"
+category: social-media
+tags: [xiaohongshu, cover, chinese-text, typography, vertical, lifestyle]
+intent: "小红书封面 / Chinese social media cover / lifestyle post hero"
+prompt: |
+  A vertical 3:4 social media cover image in Xiaohongshu (Little Red Book) viral style.
+  Top half: a flat-lay photograph of [SUBJECT] on a soft pastel background, minimalist styling,
+  natural daylight from window. Bottom half: bold large Chinese typography that reads
+  "[CHINESE_HEADLINE]", in a chunky modern sans-serif (similar to 思源黑体 Heavy),
+  high contrast against the background, with a small subtitle below in lighter weight reading
+  "[CHINESE_SUBTITLE]". Optional small decorative emoji-like icons. No watermark.
+  Aesthetic: clean, warm, inviting, fashionable. Aspect ratio 3:4.
+variables:
+  SUBJECT: "a steaming cup of latte art and an open notebook"
+  CHINESE_HEADLINE: "三十岁的清晨"
+  CHINESE_SUBTITLE: "一杯咖啡 一本书 一段独处"
+preview: previews/sm-001.webp
+preview_variants:
+  - previews/sm-001-a.webp
+  - previews/sm-001-b.webp
+size: 1024x1536
+source: "https://www.xiaohongshu.com/explore/example"
+license: CC-BY-4.0
+created: 2026-05-05
+hot_score: 0

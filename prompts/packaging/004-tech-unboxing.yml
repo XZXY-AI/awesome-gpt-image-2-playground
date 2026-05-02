@@ -1,0 +1,30 @@
+id: pk-004
+title: "Tech product unboxing reveal — premium electronics packaging"
+title_i18n:
+  zh-CN: "科技产品开箱(高端电子产品包装)"
+category: packaging
+tags: [packaging, tech, unboxing, electronics, apple-style]
+intent: "科技产品发布物料 / 详情页配图 / 开箱视频封面"
+prompt: |
+  A premium top-down unboxing photograph showing an opened black cardboard box revealing
+  the [PRODUCT] nestled in custom-cut foam compartments. Composition:
+  - Top: the product itself, perfectly centered in its foam cradle, [PRODUCT_DESCRIPTION]
+  - Below the product: a pristine white card with embossed brand mark "[BRAND]"
+  - Right of the box (outside, on surface): a small folded quick-start guide
+  - Left of the box: a USB-C cable neatly coiled with a velcro tie
+  Inside the box lid (visible in the upper portion of frame): the brand mark in subtle
+  spot-UV print on matte black. The box edges have a subtle gold foil accent line.
+  Lighting: cool overhead studio light, single soft shadow at 5 o'clock. Shot on a
+  [SURFACE]. Aspect ratio 1:1. Style: Apple, Nothing, Teenage Engineering — minimalist,
+  intentional, ceremony-of-unboxing aesthetic. Crisp focus throughout, no fingerprints.
+variables:
+  PRODUCT: "wireless over-ear headphones"
+  PRODUCT_DESCRIPTION: "matte black aluminum cups, brown leather earpads, brushed steel headband"
+  BRAND: "AUDIA"
+  SURFACE: "matte slate-gray concrete table"
+preview: previews/pk-004.webp
+size: 1024x1024
+source: ""
+license: CC-BY-4.0
+created: 2026-05-05
+hot_score: 0

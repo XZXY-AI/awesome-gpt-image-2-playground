@@ -1,0 +1,27 @@
+id: sm-002
+title: "Instagram carousel slide 1 — quote-driven hook"
+title_i18n:
+  zh-CN: "Instagram 轮播首图(金句钩子)"
+category: social-media
+tags: [instagram, carousel, quote, vertical, hook]
+intent: "Instagram 轮播首图 / 金句卡片 / Pinterest pin"
+prompt: |
+  A vertical 4:5 social media slide designed as the first frame of an Instagram carousel.
+  Solid background in [BG_COLOR]. Centered: a bold, impactful quote in modern serif
+  typography (similar to Canela or Editorial New), reading exactly: "[QUOTE]".
+  The quote spans 3-4 lines with a balanced ragged-right alignment. Below the quote, a
+  thin horizontal rule, then a small attribution: "[ATTRIBUTION]" in a contrasting
+  sans-serif, all lowercase, 1pt letter-spacing. Top corner: tiny "[BRAND]" mark.
+  Bottom right: an arrow icon "→" hinting at "swipe for more". Aspect ratio 4:5,
+  designed for 1080×1350 native. No filters, no shadows.
+variables:
+  BG_COLOR: "deep cream #F4ECE0"
+  QUOTE: "You don't have to figure it all out today. Just take the next small step."
+  ATTRIBUTION: "—  weekly newsletter, sent every monday"
+  BRAND: "soft mornings"
+preview: previews/sm-002.webp
+size: 1024x1536
+source: ""
+license: CC-BY-4.0
+created: 2026-05-05
+hot_score: 0

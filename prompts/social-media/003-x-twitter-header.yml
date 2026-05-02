@@ -1,0 +1,29 @@
+id: sm-003
+title: "X (Twitter) header banner with text and product hint"
+title_i18n:
+  zh-CN: "X / Twitter 个人主页 banner"
+category: social-media
+tags: [twitter, x, header, banner, profile, horizontal]
+intent: "X / Twitter 个人主页头图 / LinkedIn cover / YouTube channel banner"
+prompt: |
+  A horizontal X (Twitter) profile header banner, 3:1 aspect ratio. Composition split
+  into thirds: left third is solid [BG_COLOR_LEFT] with a bold short tagline reading
+  "[TAGLINE]" in 80pt clean sans-serif (similar to Inter Bold), followed by a one-line
+  subtitle "[SUBTITLE]" in 24pt regular weight. Middle third is a stylized illustration
+  or abstract gradient evoking [VISUAL_THEME]. Right third is solid [BG_COLOR_RIGHT]
+  with a small CTA pill button reading "[CTA]" in dark text on light surface. Profile
+  avatar circle area (lower-left) is left empty / safe-zoned. Professional, modern,
+  high contrast for readability on both light and dark X themes. 1500×500 native.
+variables:
+  BG_COLOR_LEFT: "deep navy #0A1628"
+  BG_COLOR_RIGHT: "soft cream #F5F1EA"
+  TAGLINE: "I help indie devs ship faster."
+  SUBTITLE: "Building & writing in public, weekly."
+  VISUAL_THEME: "a glowing sunrise over geometric mountains, line-art style"
+  CTA: "Read the newsletter →"
+preview: previews/sm-003.webp
+size: 1536x1024
+source: ""
+license: CC-BY-4.0
+created: 2026-05-05
+hot_score: 0

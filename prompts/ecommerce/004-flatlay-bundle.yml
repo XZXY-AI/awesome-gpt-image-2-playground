@@ -1,0 +1,26 @@
+id: ec-004
+title: "Flat-lay bundle/set arrangement, top-down hero"
+title_i18n:
+  zh-CN: "套装平铺俯拍(电商套装主图)"
+category: ecommerce
+tags: [flatlay, bundle, set, top-down, gift]
+intent: "电商套装主图 / 礼盒图 / 详情页平铺"
+prompt: |
+  A perfect top-down flat-lay photograph of a complete [PRODUCT_SET] arranged on
+  [BACKGROUND_SURFACE]. Items are spaced evenly with deliberate negative space, suggesting
+  a curated gift set. Soft directional shadows from upper left at 30°, no overhead glare.
+  Color palette: warm neutrals with a single accent color [ACCENT_COLOR]. Each item is
+  in pristine condition, label/branding facing up. Includes 1-2 organic accents like
+  [ACCENT_PROPS]. Composition follows the rule of thirds, with the hero item slightly
+  off-center to the right. 1:1 aspect ratio. Hyper-realistic, commercial-grade.
+variables:
+  PRODUCT_SET: "a 3-piece skincare gift set: cleanser bottle, moisturizer jar, and a folded face cloth"
+  BACKGROUND_SURFACE: "a textured beige linen surface"
+  ACCENT_COLOR: "soft sage green"
+  ACCENT_PROPS: "a small eucalyptus sprig and a smooth river stone"
+preview: previews/ec-004.webp
+size: 1024x1024
+source: ""
+license: CC-BY-4.0
+created: 2026-05-05
+hot_score: 0

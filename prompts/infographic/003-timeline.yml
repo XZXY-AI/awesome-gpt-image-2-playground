@@ -1,0 +1,43 @@
+id: ig-003
+title: "Horizontal timeline infographic with milestones"
+title_i18n:
+  zh-CN: "时间轴信息图(里程碑)"
+category: infographic
+tags: [infographic, timeline, history, business, journey]
+intent: "公司里程碑图 / 项目计划图 / 教程时间轴"
+prompt: |
+  A horizontal timeline infographic, 16:9 aspect ratio. Title at top:
+  "[TITLE]" in 56pt bold sans-serif. A single horizontal line spans the entire width
+  at vertical center, with 5 evenly-spaced circular nodes on it. Each node has:
+  - A circle filled with [ACCENT_COLOR] containing a small white year number
+  - A label below or above the line (alternating) with year + milestone text
+  Year + milestones (alternating above/below):
+  - Above: "[YEAR_1] · [MILESTONE_1]"
+  - Below: "[YEAR_2] · [MILESTONE_2]"
+  - Above: "[YEAR_3] · [MILESTONE_3]"
+  - Below: "[YEAR_4] · [MILESTONE_4]"
+  - Above: "[YEAR_5] · [MILESTONE_5]"
+  Each milestone label has a small thin line connecting the node to the text. Text in
+  20pt clean sans-serif, year in bold weight, milestone description in regular.
+  Background: subtle off-white #FAFAFA with a faint grid texture.
+  Right edge: a small "→ what's next?" hint in muted gray.
+  Style: Stripe / Linear case-study marketing graphic. Hyper-clean, plenty of whitespace.
+variables:
+  TITLE: "5 years of building Lumen"
+  ACCENT_COLOR: "indigo #4F46E5"
+  YEAR_1: "2021"
+  MILESTONE_1: "Founded in a Brooklyn coffee shop"
+  YEAR_2: "2022"
+  MILESTONE_2: "Launched private beta with 50 users"
+  YEAR_3: "2023"
+  MILESTONE_3: "Hit $100K ARR, raised seed round"
+  YEAR_4: "2024"
+  MILESTONE_4: "Scaled to 5,000 customers, 12-person team"
+  YEAR_5: "2025"
+  MILESTONE_5: "Series A, expanded to Europe and Asia"
+preview: previews/ig-003.webp
+size: 1536x1024
+source: ""
+license: CC-BY-4.0
+created: 2026-05-05
+hot_score: 0

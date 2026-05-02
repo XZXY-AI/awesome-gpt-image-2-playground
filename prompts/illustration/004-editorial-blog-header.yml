@@ -1,0 +1,33 @@
+id: il-004
+title: "Editorial blog header illustration — conceptual essay header"
+title_i18n:
+  zh-CN: "杂志编辑插画(博客文章头图)"
+category: illustration
+tags: [illustration, editorial, conceptual, blog, magazine]
+intent: "深度博客头图 / Medium 文章配图 / 公众号长文头图"
+prompt: |
+  A conceptual editorial illustration in the style of New Yorker / Atlantic / NYT
+  opinion section. The piece visually represents the concept of "[CONCEPT_THEME]"
+  through a single striking visual metaphor: [METAPHOR_DESCRIPTION].
+  Style: refined, painterly digital illustration with visible brush texture, limited
+  but deliberate color palette of [PALETTE], soft edges that fade into negative space,
+  intentional composition with strong asymmetric balance.
+  Mood: contemplative, slightly melancholic, intellectually serious — not cartoonish,
+  not cheerful.
+  Composition: the main metaphor occupies roughly the right two-thirds of the canvas;
+  the left third is mostly negative space with a single small contextual detail
+  ([CONTEXT_DETAIL]) anchoring the eye.
+  Atmospheric: subtle paper texture overlay, slight grain, like it's been printed on
+  high-quality matte paper. Aspect ratio 16:9 (web header) or 4:3 (magazine spread).
+  No text. Color grading is muted and sophisticated, never neon.
+variables:
+  CONCEPT_THEME: "the loneliness of being good at something rare"
+  METAPHOR_DESCRIPTION: "a single illuminated lighthouse on a vast empty sea at dusk, its beam cutting through fog, but no ships in sight"
+  PALETTE: "deep ocean blue, fog gray, single warm amber light, hint of dusty rose at horizon"
+  CONTEXT_DETAIL: "a few seabirds flying away from the lighthouse"
+preview: previews/il-004.webp
+size: 1536x1024
+source: ""
+license: CC-BY-4.0
+created: 2026-05-05
+hot_score: 0

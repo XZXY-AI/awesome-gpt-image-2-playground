@@ -1,0 +1,24 @@
+id: ec-002
+title: "Lifestyle product photography — product in real-world use"
+title_i18n:
+  zh-CN: "生活方式产品图(真实使用场景)"
+category: ecommerce
+tags: [product, lifestyle, in-use, natural-light, contextual]
+intent: "电商详情页 / 生活方式图 / Shopify section image"
+prompt: |
+  A natural lifestyle photograph of [PRODUCT] being actively used in [SCENE_CONTEXT].
+  Authentic moment, hands or partial figure visible (no faces), shallow depth of field
+  with the product as the focus. Natural window light from upper left, warm tones,
+  film-grain texture for authenticity. Background slightly blurred but recognizable
+  as [ENVIRONMENT_DETAIL]. 3:2 aspect ratio. No text, no logos other than the product itself.
+  Shot on Fujifilm 35mm prime, f/2.8.
+variables:
+  PRODUCT: "a matte black ceramic pour-over coffee dripper"
+  SCENE_CONTEXT: "a quiet morning kitchen scene"
+  ENVIRONMENT_DETAIL: "a marble counter with a few coffee beans scattered, a soft linen towel"
+preview: previews/ec-002.webp
+size: 1536x1024
+source: ""
+license: CC-BY-4.0
+created: 2026-05-05
+hot_score: 0

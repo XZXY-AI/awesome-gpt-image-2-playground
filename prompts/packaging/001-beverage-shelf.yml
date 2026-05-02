@@ -1,0 +1,28 @@
+id: pk-001
+title: "Premium beverage bottle on supermarket shelf, hero shot"
+title_i18n:
+  zh-CN: "高端饮料瓶超市货架主图"
+category: packaging
+tags: [packaging, beverage, shelf, retail, brand]
+intent: "饮料品牌包装设计 / 货架展示效果图 / Pitch deck 配图"
+prompt: |
+  A cinematic product photography of a premium glass beverage bottle of "[BRAND]"
+  prominently displayed on a wooden supermarket shelf, surrounded by 6-8 other slightly
+  out-of-focus competitor bottles. Hero bottle is razor-sharp focus, centered, with a
+  subtle golden rim-light. Bottle features [BOTTLE_DETAILS]: a clean minimalist label
+  with the brand name "[BRAND]" in bold sans-serif, a small certification icon, and
+  the tagline "[TAGLINE]" in lighter weight beneath. Liquid color is [LIQUID_COLOR].
+  Shelf has soft retail lighting from above, slight haze in the air, depth of field
+  isolates the hero. Realistic supermarket atmosphere with blurred shopper silhouette
+  in distant background. Aspect ratio 4:5, magazine-quality commercial photography.
+variables:
+  BRAND: "AURA"
+  BOTTLE_DETAILS: "frosted glass, 350ml elongated cylinder, rose-gold metal cap"
+  TAGLINE: "Sparkling. Botanically infused."
+  LIQUID_COLOR: "soft amber pink"
+preview: previews/pk-001.webp
+size: 1024x1536
+source: ""
+license: CC-BY-4.0
+created: 2026-05-05
+hot_score: 0

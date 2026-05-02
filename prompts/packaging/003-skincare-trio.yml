@@ -1,0 +1,38 @@
+id: pk-003
+title: "Skincare product trio — 3-piece set arrangement"
+title_i18n:
+  zh-CN: "护肤品三件套(品牌包装系列)"
+category: packaging
+tags: [packaging, skincare, cosmetic, trio, beauty]
+intent: "护肤品牌主视觉 / 详情页 / 礼盒套装图"
+prompt: |
+  A premium beauty product photograph of a 3-piece skincare set, arranged in a slightly
+  staggered triangular composition on a [SURFACE]. Items left-to-right:
+  1. "[PRODUCT_1]" — a [BOTTLE_1_DESC]
+  2. "[PRODUCT_2]" — a [BOTTLE_2_DESC] (positioned slightly higher in center)
+  3. "[PRODUCT_3]" — a [BOTTLE_3_DESC]
+  All bottles share consistent branding: brand name "[BRAND]" in elegant serif at the
+  top of each label, product type in smaller sans below. Color palette is unified:
+  [PALETTE]. Soft directional lighting from upper-left, with gentle shadows pooling
+  toward lower-right at 30°. Subtle reflections on bottle surfaces suggest premium glass.
+  Background: pure [BG_COLOR] with a single sprig of [BOTANICAL] entering from the upper
+  right. No water droplets, no clutter. Style: Aesop / Le Labo / Glossier editorial.
+  Aspect ratio 4:5.
+variables:
+  SURFACE: "smooth marble surface in cool warm-white"
+  PRODUCT_1: "Gentle Cleanser"
+  BOTTLE_1_DESC: "tall slim 200ml clear glass bottle with black pump"
+  PRODUCT_2: "Hydrating Serum"
+  BOTTLE_2_DESC: "30ml amber dropper bottle with brushed gold cap"
+  PRODUCT_3: "Daily Moisturizer"
+  BOTTLE_3_DESC: "wide 50ml frosted glass jar with black screw lid"
+  BRAND: "MILA"
+  PALETTE: "amber, warm white, charcoal black, brushed gold"
+  BG_COLOR: "soft cream #F4ECE0"
+  BOTANICAL: "olive branch with two leaves"
+preview: previews/pk-003.webp
+size: 1024x1536
+source: ""
+license: CC-BY-4.0
+created: 2026-05-05
+hot_score: 0

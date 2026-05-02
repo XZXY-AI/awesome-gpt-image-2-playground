@@ -1,0 +1,36 @@
+id: ui-003
+title: "Dark-mode AI chat interface mockup"
+title_i18n:
+  zh-CN: "深色模式 AI 对话界面 Mockup"
+category: ui-mockup
+tags: [chat, ai, dark-mode, mobile, ios, conversational]
+intent: "AI 聊天 App mockup / 产品 demo / 落地页 hero"
+prompt: |
+  A pixel-perfect iPhone 15 Pro screenshot in dark mode of an AI chat app called
+  "[APP_NAME]". Status bar shows 9:41, full battery. Top of screen: a thin nav bar
+  with the app name centered and a small avatar circle on the right.
+  Body: a chat conversation showing 4 message bubbles in alternating positions:
+  - User (right-aligned, [USER_BUBBLE_COLOR]): "[USER_MSG_1]"
+  - AI (left-aligned, dark gray bubble with subtle border): a thoughtful response,
+    "[AI_MSG_1]" rendered with proper line breaks, maybe a small inline code snippet
+  - User: "[USER_MSG_2]"
+  - AI (still typing): three animated dots indicator
+  Bottom: a rounded input field with placeholder "[INPUT_PLACEHOLDER]", a small mic
+  icon, and a send button (filled circle in [ACCENT_COLOR]) on the right.
+  Aesthetic: ChatGPT meets Linear, very polished, crisp SF Pro Display typography,
+  rounded corners 16pt, subtle backdrop blur. Pure black background #000.
+  Aspect ratio 9:19.5.
+variables:
+  APP_NAME: "Lumen"
+  USER_BUBBLE_COLOR: "indigo #4F46E5"
+  USER_MSG_1: "Help me plan a 3-day Tokyo trip"
+  AI_MSG_1: "Sure — when's the trip and what's your vibe? Foodie? History buff? Both?"
+  USER_MSG_2: "Both, end of June, mid-budget"
+  INPUT_PLACEHOLDER: "Message Lumen..."
+  ACCENT_COLOR: "soft cyan #6FE7E3"
+preview: previews/ui-003.webp
+size: 1024x1536
+source: ""
+license: CC-BY-4.0
+created: 2026-05-05
+hot_score: 0

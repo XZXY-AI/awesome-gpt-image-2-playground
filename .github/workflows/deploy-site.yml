@@ -1,0 +1,17 @@
+name: Trigger site rebuild
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'prompts/**'
+      - 'images/**'
+
+jobs:
+  trigger-vercel:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hit Vercel Deploy Hook
+        if: ${{ secrets.VERCEL_DEPLOY_HOOK != '' }}
+        run: |
+          curl -fsSL -X POST "${{ secrets.VERCEL_DEPLOY_HOOK }}"

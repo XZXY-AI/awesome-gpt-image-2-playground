@@ -1,0 +1,24 @@
+id: ec-003
+title: "Minimalist product on bold color-block background"
+title_i18n:
+  zh-CN: "极简产品图(撞色块背景)"
+category: ecommerce
+tags: [product, minimalist, color-block, modern, editorial]
+intent: "电商主图(品牌调性)/ 落地页 hero / Instagram feed product"
+prompt: |
+  A high-end editorial product photograph of [PRODUCT] centered against a bold split
+  color-block background: top half [COLOR_TOP], bottom half [COLOR_BOTTOM], with a hard
+  diagonal line dividing them at 30 degrees. The product casts a long, soft shadow
+  toward the lower right. Studio lighting, ultra-clean, no props, no text. The product
+  occupies roughly 40% of frame, centered with generous negative space. Style: minimalist,
+  Bauhaus-inspired, fashion-magazine quality. 1:1 aspect ratio.
+variables:
+  PRODUCT: "a sleek matte glass perfume bottle"
+  COLOR_TOP: "Pantone Coral 16-1546"
+  COLOR_BOTTOM: "warm cream off-white"
+preview: previews/ec-003.webp
+size: 1024x1024
+source: ""
+license: CC-BY-4.0
+created: 2026-05-05
+hot_score: 0

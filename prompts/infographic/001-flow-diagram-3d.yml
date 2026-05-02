@@ -1,0 +1,41 @@
+id: ig-001
+title: "3D isometric flow diagram for tech product explainer"
+title_i18n:
+  zh-CN: "3D 等距流程图(科技产品解说)"
+category: infographic
+tags: [infographic, 3d, isometric, flow-diagram, tech, explainer]
+intent: "信息图 / 流程图 / 产品讲解配图 / SaaS landing graphic"
+prompt: |
+  A 3D isometric infographic flow diagram explaining how "[PROCESS_NAME]" works,
+  rendered in clean low-poly style with soft shadows and a unified color palette of
+  [PALETTE]. The diagram has [N_STEPS] connected nodes flowing left-to-right:
+  Step 1: [STEP_1_LABEL] (visualized as [STEP_1_ICON])
+  Step 2: [STEP_2_LABEL] (visualized as [STEP_2_ICON])
+  Step 3: [STEP_3_LABEL] (visualized as [STEP_3_ICON])
+  Step 4: [STEP_4_LABEL] (visualized as [STEP_4_ICON])
+  Connecting lines between nodes are dashed, with small arrow indicators.
+  Each node has a small label rendered in clean sans-serif (similar to Inter Medium).
+  Title at the top: "[DIAGRAM_TITLE]" in larger weight.
+  Background: soft off-white with a subtle grid texture. No clutter, plenty of whitespace.
+  Style reference: Stripe, Linear, or Vercel marketing graphics. Aspect ratio 16:9.
+variables:
+  PROCESS_NAME: "passwordless authentication"
+  PALETTE: "indigo, sky blue, mint, soft pink"
+  N_STEPS: "4"
+  STEP_1_LABEL: "User enters email"
+  STEP_1_ICON: "an envelope on a phone screen"
+  STEP_2_LABEL: "Magic link sent"
+  STEP_2_ICON: "a paper plane with a glowing key"
+  STEP_3_LABEL: "User clicks link"
+  STEP_3_ICON: "a finger tapping a notification"
+  STEP_4_LABEL: "Logged in securely"
+  STEP_4_ICON: "a shield with a checkmark"
+  DIAGRAM_TITLE: "How Passwordless Login Works"
+preview: previews/ig-001.webp
+preview_variants:
+  - previews/ig-001-a.webp
+size: 1536x1024
+source: ""
+license: CC-BY-4.0
+created: 2026-05-05
+hot_score: 0

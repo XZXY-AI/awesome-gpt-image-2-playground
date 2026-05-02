@@ -1,0 +1,40 @@
+id: ig-002
+title: "Comparison table infographic — feature matrix"
+title_i18n:
+  zh-CN: "对比表信息图(功能矩阵)"
+category: infographic
+tags: [infographic, comparison, table, business, marketing]
+intent: "竞品对比图 / 落地页 / 销售物料"
+prompt: |
+  A clean comparison-table infographic, horizontal 16:9 aspect ratio.
+  Title at top: "[TITLE]" in 48pt bold sans-serif (similar to Inter Bold).
+  Three-column comparison: each column header shows a brand/product:
+  - Column 1: "[OPTION_1]" (your product, highlighted with subtle [ACCENT_COLOR] tint)
+  - Column 2: "[OPTION_2]" (competitor A)
+  - Column 3: "[OPTION_3]" (competitor B)
+  4 feature rows, each with a small icon on the left and the feature name:
+  - "[FEATURE_1]" → ✓ ✓ ✗
+  - "[FEATURE_2]" → ✓ ✗ ✗
+  - "[FEATURE_3]" → ✓ ✓ ✓
+  - "[FEATURE_4]" → ✓ ✗ ✓
+  Checkmarks rendered as filled circles in [ACCENT_COLOR] for ✓ and as muted gray
+  hyphens for ✗. Bottom right: a small CTA pill "[CTA] →" in [ACCENT_COLOR].
+  Aesthetic: Vercel / Linear / Stripe marketing infographic. Soft drop shadows on
+  cards, plenty of whitespace, no clutter. Print-ready.
+variables:
+  TITLE: "Why teams choose [OPTION_1]"
+  OPTION_1: "Lumen"
+  OPTION_2: "Competitor A"
+  OPTION_3: "Competitor B"
+  ACCENT_COLOR: "indigo #4F46E5"
+  FEATURE_1: "Real-time collaboration"
+  FEATURE_2: "Native AI assistant built-in"
+  FEATURE_3: "Free tier"
+  FEATURE_4: "Self-hosted option"
+  CTA: "Start free trial"
+preview: previews/ig-002.webp
+size: 1536x1024
+source: ""
+license: CC-BY-4.0
+created: 2026-05-05
+hot_score: 0

@@ -1,0 +1,35 @@
+{
+  "name": "awesome-gpt-image-2-playground",
+  "version": "0.1.0",
+  "private": true,
+  "description": "The only GPT Image 2 prompt library you can run for free in your browser.",
+  "homepage": "https://gptimage2.veilo.dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/XZXY-AI/awesome-gpt-image-2-playground.git"
+  },
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build:readme": "tsx scripts/build-readme.ts",
+    "build:index": "tsx scripts/build-index.ts",
+    "translate": "tsx scripts/translate.ts",
+    "stats": "tsx scripts/stats.ts",
+    "validate": "tsx scripts/validate.ts",
+    "build": "pnpm validate && pnpm build:index && pnpm build:readme && pnpm stats"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  },
+  "dependencies": {
+    "fast-glob": "^3.3.2",
+    "yaml": "^2.5.0",
+    "zod": "^3.23.8"
+  },
+  "packageManager": "pnpm@9.10.0"
+}

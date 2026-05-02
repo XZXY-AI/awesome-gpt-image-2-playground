@@ -1,0 +1,38 @@
+id: ui-001
+title: "iOS app home screen mockup, hyper-realistic iPhone screenshot"
+title_i18n:
+  zh-CN: "iOS App 首页 Mockup(iPhone 截图风格)"
+category: ui-mockup
+tags: [ui, mockup, ios, iphone, app, screenshot, light-mode]
+intent: "App UI mockup / iPhone screenshot / product design preview"
+prompt: |
+  A pixel-perfect iPhone 15 Pro screenshot of an iOS app home screen for "[APP_NAME]",
+  taken in light mode at 9:41 AM with full battery and 5G signal in the status bar.
+  The app's home screen shows:
+  - Large bold title "[APP_TITLE]" at the top, with a subtitle "[APP_SUBTITLE]"
+  - A horizontal scrollable card carousel with 3 visible cards, each featuring [CARD_THEME]
+  - Below: a 2-column grid of 4 feature tiles with SF Symbols icons and short labels
+  - At the bottom: a tab bar with 4 tabs: "[TAB_1]", "[TAB_2]", "[TAB_3]", "[TAB_4]"
+  Use Apple's Human Interface Guidelines: 16pt margins, SF Pro typography,
+  rounded card corners (12pt radius), subtle drop shadows, white background with
+  one accent color "[ACCENT_COLOR]". No notch overlay, no home indicator hidden.
+  Aspect ratio 9:19.5, 1290x2796 native resolution emulated.
+variables:
+  APP_NAME: "Lumen"
+  APP_TITLE: "Good morning, Sara"
+  APP_SUBTITLE: "Here's what's planned for today"
+  CARD_THEME: "a meditation session, a workout, and a journaling prompt"
+  TAB_1: "Today"
+  TAB_2: "Library"
+  TAB_3: "Insights"
+  TAB_4: "Profile"
+  ACCENT_COLOR: "warm coral #FF6B6B"
+preview: previews/ui-001.webp
+preview_variants:
+  - previews/ui-001-a.webp
+  - previews/ui-001-b.webp
+size: 1024x1536
+source: ""
+license: CC-BY-4.0
+created: 2026-05-05
+hot_score: 0

@@ -1,0 +1,27 @@
+id: sm-004
+title: "TikTok / Reels vertical cover with bold hook text"
+title_i18n:
+  zh-CN: "TikTok / 抖音封面(强钩子文案)"
+category: social-media
+tags: [tiktok, reels, vertical, 9-16, cover, hook]
+intent: "TikTok 封面 / Instagram Reels cover / 抖音视频封面"
+prompt: |
+  A vertical 9:16 video cover image. Background: a candid photograph of [SCENE], slightly
+  desaturated for text readability, with a dark gradient overlay from top (40% opacity)
+  fading to clear in the lower third. Centered upper half: the hook text "[HOOK_TEXT]"
+  in 130pt extra-bold sans-serif (similar to Druk or BebasNeue Heavy), white with a
+  thin black outline (3pt) for legibility on any background. Each line of text fits the
+  9:16 width with no wrapping. Below the headline, smaller secondary text "[SUBTEXT]"
+  at 50pt, same font, in [ACCENT_COLOR]. Bottom right: a small circular play icon ▶
+  hinting at video. Aesthetic: TikTok-native, high contrast, scroll-stopping.
+variables:
+  SCENE: "an open laptop on a sunlit desk with a coffee mug and notebook"
+  HOOK_TEXT: "I quit my job in 2024."
+  SUBTEXT: "Here's what no one tells you →"
+  ACCENT_COLOR: "warm yellow #FFD93D"
+preview: previews/sm-004.webp
+size: 1024x1536
+source: ""
+license: CC-BY-4.0
+created: 2026-05-05
+hot_score: 0
