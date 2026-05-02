@@ -19,12 +19,12 @@ prompt: |
   Aspect ratio 4:3 (landscape book spread). Suitable for ages 3-8. Soft, magical,
   inviting bedtime-story atmosphere. No text within the image.
 variables:
-  SCENE_DESCRIPTION: "a cozy children's bedroom at bedtime, with a tiny rocket-ship-shaped bed, fairy lights strung across the ceiling, and a window showing a moonlit garden outside"
-  CHARACTER_DESCRIPTION: "a small girl in striped yellow pajamas with messy brown pigtails"
-  CHARACTER_ACTION: "kneeling at the window, hands on the glass, watching a friendly cloud-shaped creature peek in from outside"
-  DETAIL_1: "stuffed rabbit toy fallen halfway off the bed"
-  DETAIL_2: "open picture book on the floor with a paper airplane bookmark"
-  DETAIL_3: "tiny mouse peeking out from behind the dresser holding a piece of cheese"
+  SCENE_DESCRIPTION: "a cozy attic library at twilight, with a tiny rocket-ship-shaped reading nook, fairy lights strung across wooden beams, and a round window showing a moonlit forest outside"
+  CHARACTER_DESCRIPTION: "a small ginger fox wearing a knitted blue scarf and round spectacles"
+  CHARACTER_ACTION: "perched on a stack of leather-bound books at the round window, paws on the glass, watching a friendly cloud-shaped creature peek in from outside"
+  DETAIL_1: "open picture book on the floor with a paper airplane bookmark"
+  DETAIL_2: "tiny mouse peeking out from behind a teapot, holding a piece of cheese"
+  DETAIL_3: "an old brass telescope tilted toward the window, with a sleeping moth on its lens"
 preview: previews/il-001.webp
 size: 1536x1024
 source: ""
