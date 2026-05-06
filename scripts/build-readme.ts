@@ -11,6 +11,20 @@ import { resolve } from 'node:path';
 import { loadAllPrompts } from './lib/load-prompts.ts';
 import { CATEGORY_META, SUPPORTED_LANGS } from './lib/prompt-schema.ts';
 
+/** Mirror of slugify() in site/lib/load-prompts.ts. Same input → same output. */
+function slugify(title: string, maxWords = 7): string {
+  return title
+    .toLowerCase()
+    .replace(/[^\w\s-]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .split(' ')
+    .slice(0, maxWords)
+    .join('-')
+    .replace(/-+/g, '-')
+    .replace(/^-|-$/g, '');
+}
+
 const REPO_ROOT = resolve(import.meta.dirname, '..');
 const SITE_URL = process.env.SITE_URL ?? 'https://gptimage2.veilo.dev';
 const REPO_URL = 'https://github.com/XZXY-AI/awesome-gpt-image-2-playground';
@@ -36,16 +50,46 @@ function renderTopGrid(
     .slice(0, TOP_COUNT)
     .map((p) => {
       const cat = CATEGORY_META[p.category];
+      const slug = slugify(p.title);
       return `### ${cat?.emoji ?? '🎨'} ${p.title}
-<a href="prompts/${p.category}/?id=${p.id}"><img src="images/${p.preview}" width="320" align="left" hspace="20"/></a>
+<a href="${SITE_URL}/p/${slug}?utm_source=github&utm_medium=top-grid"><img src="images/${p.preview}" width="320" align="left" hspace="20"/></a>
 
-[ 🟢 **Try it free →** ](${SITE_URL}/p/${p.id}?utm_source=github)
+[ 🟢 **Try it free →** ](${SITE_URL}/p/${slug}?utm_source=github&utm_medium=top-grid)
 
 <br clear="left"/>
 
 ---`;
     })
     .join('\n\n');
+}
+
+/**
+ * Full index of every prompt, grouped by category, with descriptive slug links.
+ * This is the most important SEO surface in the README — every prompt is one
+ * crawlable link that targets a unique long-tail keyword via its slug.
+ */
+function renderFullIndex(
+  prompts: { id: string; title: string; intent: string; preview: string; category: string }[],
+): string {
+  const byCategory: Record<string, typeof prompts> = {};
+  for (const p of prompts) {
+    (byCategory[p.category] ??= []).push(p);
+  }
+  const sections: string[] = [];
+  for (const [cat, items] of Object.entries(byCategory)) {
+    const meta = CATEGORY_META[cat];
+    sections.push(`### ${meta?.emoji ?? '🎨'} ${meta?.label ?? cat} (${items.length})
+
+| Preview | Prompt | Intent | Try |
+|---------|--------|--------|-----|
+${items
+  .map((p) => {
+    const slug = slugify(p.title);
+    return `| <img src="images/${p.preview}" width="100"/> | **${p.title}** | ${p.intent} | [▶️](${SITE_URL}/p/${slug}?utm_source=github&utm_medium=full-index) |`;
+  })
+  .join('\n')}`);
+  }
+  return sections.join('\n\n');
 }
 
 async function main() {
@@ -70,7 +114,9 @@ async function main() {
     top_count: String(TOP_COUNT),
     hero_grid: renderHeroGrid(prompts),
     top_grid: renderTopGrid(sortedByHot),
+    full_index: renderFullIndex(prompts),
     generated_at: new Date().toISOString().slice(0, 10),
+    last_rebuilt: new Date().toISOString(),
     count_ecommerce: String(counts.ecommerce ?? 0),
     count_social_media: String(counts['social-media'] ?? 0),
     count_poster: String(counts.poster ?? 0),

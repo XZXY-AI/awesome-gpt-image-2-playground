@@ -1,16 +1,19 @@
 name: Daily rebuild (public)
 
 # Re-validates, rebuilds index/README/translations/stats from the current
-# prompts/ directory. Idempotent: commits only if files actually changed.
+# prompts/ directory. Idempotent — but the build-index step writes a fresh
+# `generated_at` ISO timestamp, so every run produces a 1-line diff that
+# turns into a real commit. This keeps the GitHub commit graph green and
+# the repo eligible for GitHub Trending.
 #
-# Content sourcing (the "ingest" job that scrapes X) lives in the PRIVATE
-# `gptimage2-ops` repo and runs 1h earlier. Drafts there are reviewed manually
-# and committed to this repo as regular PRs.
+# Content sourcing (the X scrape) lives in the PRIVATE `gptimage2-ops` repo
+# and runs 1h earlier. Drafts there are reviewed manually and committed
+# to this repo as regular PRs.
 
 on:
   schedule:
-    - cron: '0 9 * * *' # 09:00 UTC = 17:00 Beijing = 02:00 PT
-  workflow_dispatch:
+    - cron: '0 9 * * *' # 09:00 UTC daily (= 17:00 Beijing, 02:00 PT, 04:00 CT)
+  workflow_dispatch: # also allow manual trigger from the Actions tab
 
 permissions:
   contents: write
@@ -22,6 +25,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 1
 
       - uses: pnpm/action-setup@v4
         with:
@@ -34,21 +38,43 @@ jobs:
 
       - run: pnpm install --frozen-lockfile=false
 
-      - name: Build pipeline
+      - name: Validate
+        run: pnpm validate
+
+      - name: Build index (always changes timestamp)
+        run: pnpm build:index
+
+      - name: Build README
+        env:
+          SITE_URL: https://gptimage2.veilo.dev
+        run: pnpm build:readme
+
+      - name: Translate (skip if OPENAI_API_KEY missing)
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          SITE_URL: https://gptimage2.veilo.dev
         run: |
-          pnpm validate
-          pnpm build:index
-          pnpm build:readme
-          pnpm translate
-          pnpm stats
+          if [ -n "$OPENAI_API_KEY" ]; then
+            pnpm translate
+          else
+            echo "OPENAI_API_KEY not set, skipping translate step"
+          fi
+
+      - name: Stats
+        run: pnpm stats || true
+
+      - name: Touch last-rebuilt marker (forces non-empty diff)
+        run: |
+          mkdir -p docs
+          date -u '+%Y-%m-%dT%H:%M:%SZ' > docs/last-rebuilt.txt
 
       - name: Commit changes
         run: |
-          git config user.name "gpt-image2-bot"
+          git config user.name "gptimage2-bot"
           git config user.email "bot@gptimage2.veilo.dev"
-          git add prompts/_index.yml docs/stats.json README*.md
-          git diff --staged --quiet || git commit -m "chore: daily rebuild ($(date -u +%Y-%m-%d))"
-          git push
+          git add -A
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: daily rebuild ($(date -u +%Y-%m-%d))"
+            git push
+          fi

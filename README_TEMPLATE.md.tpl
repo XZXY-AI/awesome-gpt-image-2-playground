@@ -12,7 +12,7 @@ DO NOT edit README.md directly — your changes will be overwritten.
 
 **The only GPT Image 2 prompt library you can run for free in your browser.**
 
-[ ▶️ **Try It Free Online** ]({{site_url}}?utm_source=github&utm_medium=readme&utm_campaign=hero) &nbsp;·&nbsp; [Docs]({{site_url}}/docs) &nbsp;·&nbsp; [Discord]({{discord_url}}) &nbsp;·&nbsp; [X]({{x_url}})
+[ ▶️ **Try It Free Online** ]({{site_url}}?utm_source=github&utm_medium=readme&utm_campaign=hero) &nbsp;·&nbsp; [Edit Your Image]({{site_url}}/edit?utm_source=github) &nbsp;·&nbsp; [Prompt Lab]({{site_url}}/lab?utm_source=github) &nbsp;·&nbsp; [Docs]({{site_url}}/docs/prompting?utm_source=github)
 
 ![stars](https://img.shields.io/github/stars/XZXY-AI/awesome-gpt-image-2-playground?style=for-the-badge&color=ffd700)
 ![prompts](https://img.shields.io/badge/prompts-{{prompts_count}}-blue?style=for-the-badge)
@@ -28,15 +28,29 @@ DO NOT edit README.md directly — your changes will be overwritten.
 
 ---
 
-## 🎁 Why this exists
+## 🚀 30-second pitch
 
-Other GPT Image 2 prompt lists make you copy, paste, and pray. **We let you run every prompt right from your browser, for free.** Click any 🟢 `Try` button below — no signup needed for your first 3 generations.
+Other GPT Image 2 prompt lists make you copy, paste, and pray. **We let you run every prompt right from your browser, for free.**
 
-- 🚀 **{{prompts_count}} curated prompts**, each with a real preview image
-- 🎯 **Use-case first** — find prompts by what you want to make ("Amazon main image", "Xiaohongshu cover"), not by abstract style
-- 🧪 **Prompt Lab** — visual prompt builder, tweak any element and re-generate
-- 🌍 **{{langs_count}} languages** — built for global creators
-- 🔄 **Daily updates** — fresh viral prompts every morning
+- ⚡ Click any 🟢 `Try` button → image in 30 seconds. **No signup needed for your first generation.**
+- 🎨 **{{prompts_count}} hand-vetted prompts** with real preview images, organized by use-case (Amazon listing, Xiaohongshu cover, iOS mockup, infographic — not abstract style)
+- 🖼️ **Image-to-image edit** + **mask inpaint** — features no other awesome-list offers
+- 🧪 **Visual Prompt Lab** to remix any prompt from atoms (subject / style / lighting / camera)
+- 🌍 **{{langs_count}} languages** built in
+- ⭐ **Star this repo** to unlock 3 free generations per day (vs 1 for anonymous)
+
+---
+
+## 📑 Table of Contents
+
+- [🔥 Top {{top_count}} this week](#-top-{{top_count}}-this-week)
+- [🧭 Find by Need](#-find-by-need)
+- [📚 Full Prompt Index](#-full-prompt-index)
+- [🧪 Prompt Lab — build your own](#-prompt-lab--build-your-own)
+- [📖 Prompting Cheatsheet](#-prompting-cheatsheet)
+- [🆚 Comparisons](#-comparisons)
+- [🤝 Contribute](#-contribute)
+- [📜 License](#-license)
 
 ---
 
@@ -54,20 +68,28 @@ What are you trying to make?
 
 | Use case | Count | Browse |
 |----------|-------|--------|
-| 🛒 E-commerce main image | {{count_ecommerce}} | [→](prompts/ecommerce/) |
-| 📱 Social media cover (Xiaohongshu / Instagram / X) | {{count_social_media}} | [→](prompts/social-media/) |
-| 📰 Poster & marketing | {{count_poster}} | [→](prompts/poster/) |
-| 🎨 UI mockup / app screenshot | {{count_ui_mockup}} | [→](prompts/ui-mockup/) |
-| 📊 Infographic / flow diagram | {{count_infographic}} | [→](prompts/infographic/) |
-| 📦 Product packaging | {{count_packaging}} | [→](prompts/packaging/) |
-| 📷 Photography / photorealism | {{count_photography}} | [→](prompts/photography/) |
-| 🖌️ Illustration / artistic | {{count_illustration}} | [→](prompts/illustration/) |
+| 🛒 E-commerce main image (Amazon, Shopify) | {{count_ecommerce}} | [→]({{site_url}}/gallery?cat=ecommerce&utm_source=github) |
+| 📱 Social media cover (Xiaohongshu / Instagram / X) | {{count_social_media}} | [→]({{site_url}}/gallery?cat=social-media&utm_source=github) |
+| 📰 Poster & marketing | {{count_poster}} | [→]({{site_url}}/gallery?cat=poster&utm_source=github) |
+| 🎨 UI mockup / app screenshot | {{count_ui_mockup}} | [→]({{site_url}}/gallery?cat=ui-mockup&utm_source=github) |
+| 📊 Infographic / flow diagram | {{count_infographic}} | [→]({{site_url}}/gallery?cat=infographic&utm_source=github) |
+| 📦 Product packaging | {{count_packaging}} | [→]({{site_url}}/gallery?cat=packaging&utm_source=github) |
+| 📷 Photography / photorealism | {{count_photography}} | [→]({{site_url}}/gallery?cat=photography&utm_source=github) |
+| 🖌️ Illustration / artistic | {{count_illustration}} | [→]({{site_url}}/gallery?cat=illustration&utm_source=github) |
+
+---
+
+## 📚 Full Prompt Index
+
+Every prompt in the library, grouped by category. Click 🟢 to open the live page with one-click generation, full prompt text, sample variations, and use-case guidance.
+
+{{full_index}}
 
 ---
 
 ## 🧪 Prompt Lab — build your own
 
-Don't see exactly what you need? Open the [Prompt Lab]({{site_url}}/lab) and assemble a prompt from atoms:
+Don't see exactly what you need? Open the [Prompt Lab]({{site_url}}/lab?utm_source=github) and assemble a prompt from atoms:
 
 - **Subject** — what's in the image
 - **Style** — photorealistic / illustration / 3D / flat
@@ -80,7 +102,7 @@ The Lab will compose a structured prompt for you and run it instantly.
 
 ---
 
-## 📚 Prompting Cheatsheet
+## 📖 Prompting Cheatsheet
 
 The 5 things gpt-image-2 does better than other models, and how to exploit them:
 
@@ -90,19 +112,38 @@ The 5 things gpt-image-2 does better than other models, and how to exploit them:
 4. **Cross-image consistency** — reference earlier outputs by ID for sequels
 5. **Reasoning before generating** — give the model the goal, not just keywords ("a marketing poster that emphasizes safety")
 
-Full guide: [{{site_url}}/docs/prompting]({{site_url}}/docs/prompting)
+Full guide: [{{site_url}}/docs/prompting]({{site_url}}/docs/prompting?utm_source=github)
+
+---
+
+## 🆚 Comparisons
+
+How does this stack up against other tools?
+
+- [vs. EvoLinkAI awesome-prompts]({{site_url}}/vs/evolink) (11.3k★) — feature-rich library with no playground
+- [vs. YouMind-OpenLab]({{site_url}}/vs/youmind) (4.1k★) — high volume, lower hand-curation
+- [vs. freestylefly]({{site_url}}/vs/freestylefly) (3.1k★) — engineering-flavored "Prompt as Code" framework
+- [vs. DALL·E 3]({{site_url}}/vs/dalle3) — OpenAI's previous-gen image model
+- [vs. Midjourney]({{site_url}}/vs/midjourney) — premium aesthetic-focused generator
 
 ---
 
 ## 🤝 Contribute
 
 We accept new prompts via PR. Quality bar:
+
 - ✅ Real preview image (≤200 KB WebP)
-- ✅ Clear category
+- ✅ Clear use-case category
 - ✅ Original or sourced (with credit)
 - ❌ No celebrity / brand / NSFW
 
 See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+Looking for a good first issue? Try:
+
+- Add a 33rd prompt for a category that has 4 items currently
+- Translate one prompt into a language not yet covered
+- Improve the cheatsheet with a new technique
 
 ---
 
@@ -117,14 +158,14 @@ See [LICENSE](LICENSE).
 
 ## 💼 Sponsors
 
-Building this is free for users. If your team uses these prompts in production, consider [supporting the project]({{site_url}}/pricing) — it pays the API bills.
+Building this is free for users. If your team uses these prompts in production, consider [supporting the project]({{site_url}}/pricing?utm_source=github) — it pays the API bills.
 
 ---
 
 <div align="center">
 
-**Built by [@XZXY-AI](https://github.com/XZXY-AI)** &nbsp;·&nbsp; **[⭐ Star]({{repo_url}})** to follow updates &nbsp;·&nbsp; **[Try it now →]({{site_url}})**
+**Built by [@XZXY-AI](https://github.com/XZXY-AI)** &nbsp;·&nbsp; **[⭐ Star]({{repo_url}})** to unlock +1 daily free generation &nbsp;·&nbsp; **[Try it now →]({{site_url}}?utm_source=github)**
 
-Last updated: {{generated_at}}
+Last updated: {{generated_at}} &nbsp;·&nbsp; <sub>Generated at {{last_rebuilt}}</sub>
 
 </div>
